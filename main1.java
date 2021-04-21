@@ -11,19 +11,35 @@ public class main1
         // menciptakan objek baru dari class Calculator
         kalkulator kalkul = new kalkulator();
         
-        kalkul.name = "Operator ";
+       
 
-        //author
-        System.out.println("--- OPERATOR DASAR  ---");
-        //inputan oprator yg dijalankan
-        System.out.println("nilai 1 = "+ kalkul.x);
-        System.out.println("nilai 2 = "+ kalkul.y);
-        //memanggil atribut hasil
-        System.out.println(kalkul.name + "penjumlahan 10 + 10 = "+ kalkul.penjumlahan);
-        System.out.println(kalkul.name + "pengurangan 10 - 10 = "+ kalkul.pengurangan);
-        System.out.println(kalkul.name + "perkalian 10 * 10 = "+ kalkul.perkalian);
-        System.out.println(kalkul.name + "pembagian 10 / 10 = "+ kalkul.pembagian);        
+         System.out.println("");
+       double hasil1 = kalkul.jumlah();
+       double hasil2 = kalkul.jumlah(3.4, 5.4);
+       System.out.println("Hasil penjumlahan method jumlah tanpa parameter: "+ hasil1);
+       System.out.println("Hasil penjumlahan method jumlah dengan parameter: "+ hasil2);
+
+       System.out.println("");
+       double hasil3 = kalkul.kurang();
+       double hasil4 = kalkul.kurang(10, 5);
+       System.out.println("Hasil perkurangan method kurang tanpa parameter: "+ hasil3);
+       System.out.println("Hasil perkurangan method kurang dengan parameter: "+ hasil4);
+    
+       System.out.println("");
+       double hasil5 = kalkul.kali();
+       double hasil6 = kalkul.kali(3, 5);
+       System.out.println("Hasil perkalian method kali tanpa parameter: "+ hasil5);
+       System.out.println("Hasil perkalian method kali dengan parameter: "+ hasil6);
+
+       System.out.println("");
+       double hasil7 = kalkul.bagi();
+       double hasil8 = kalkul.bagi(10, 2);
+       System.out.println("Hasil Pembagian method bagi tanpa parameter: "+ hasil7);
+       System.out.println("Hasil Pembagian method bagi dengan parameter: "+ hasil8);
+    
+    
+   }       
     }
 
-}
+
 

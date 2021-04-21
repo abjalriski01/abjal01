@@ -7,34 +7,112 @@
  */
 public class kalkulator
 {
-    String name;
-    
-    int x = 10;
-    int y = 10;
-    
-    int penjumlahan = x + y;
-    int perkalian = x * y;
-    int pengurangan = x - y;
-    int pembagian = x / y;
+    // op
+    public double op1=0;
+    public double op2=0;
+    public static final String info = "Kalkulatorku";
+    public static int jumlahobject = 0;
 
-    /**
-     * Constructor for objects of class kalkulator
-     */
-    public kalkulator()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
+    
+      /**
+     * jumlah tanpa parameter
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param  
+     * @return  double hasil penjumlahan op1 + op2
      */
-    public int sampleMethod(int y)
+    public double jumlah() 
     {
-        // put your code here
-        return x + y;
+        return this.op1 + this.op2;
     }
-}
+    
+     /**
+     * jumlah dengan parameter
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil penjumlahan op1 + op2
+     */
+    public double jumlah(double op1, double op2) 
+    {
+        this.op1 = op1;
+        this.op2 = op2;
+        return jumlah();
+    }
+    
+    /**
+     * kurang tanpa parameter
+     *
+     * @param  
+     * @return  double hasil perkurangan op1 + op2
+     */
+    public double kurang() 
+    {
+        return this.op1 - this.op2;
+    }
+    
+     /**
+     * kurang dengan parameter
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil perkurangan op1 - op2
+     */
+    public double kurang(double op1, double op2) 
+    {
+        this.op1 = op1;
+        this.op2 = op2;
+        return kurang();
+    }
+    
+    /**
+     * kali tanpa parameter
+     *
+     * @param  
+     * @return  double hasil Perkalian op1 * op2
+     */
+    public double kali() 
+    {
+        return this.op1 * this.op2;
+    }
+    
+     /**
+     * kali dengan parameter
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil Perkalian op1 * op2
+     */
+    public double kali(double op1, double op2) 
+    {
+        this.op1 = op1;
+        this.op2 = op2;
+        return kali();
+    }
+    
+    /**
+     * bagi tanpa parameter
+     *
+     * @param  
+     * @return  double hasil Pembagian op1 / op2
+     */
+    public double bagi() 
+    {
+        return this.op1 / this.op2;
+    }
+    
+     /**
+     * bagi dengan parameter
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil Pembagian op1 * op2
+     */
+    public double bagi(double op1, double op2) 
+    {
+        this.op1 = op1;
+        this.op2 = op2;
+        return bagi();
+    }
+    
+    }
+
