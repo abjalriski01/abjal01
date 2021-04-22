@@ -12,8 +12,8 @@ public class main1
         kalkulator kalkul = new kalkulator();
         
        
-
-         System.out.println("");
+       /*
+       System.out.println("");
        double hasil1 = kalkul.jumlah();
        double hasil2 = kalkul.jumlah(3.4, 5.4);
        System.out.println("Hasil penjumlahan method jumlah tanpa parameter: "+ hasil1);
@@ -36,10 +36,23 @@ public class main1
        double hasil8 = kalkul.bagi(10, 2);
        System.out.println("Hasil Pembagian method bagi tanpa parameter: "+ hasil7);
        System.out.println("Hasil Pembagian method bagi dengan parameter: "+ hasil8);
+       */
+       
+       kalkulatorprogrammer clp = new kalkulatorprogrammer();
+       System.out.println(" \n kalkulatorprogrammer");
+       System.out.println("Bentuk Biner dari Desimal " + " :"+ Integer.toBinaryString(500));
+       System.out.println("Bentuk Hex dari Desimal " + " :"+ Integer.toHexString(500));
+
     
-    
+      kalkulatorscientific cs = new kalkulatorscientific();
+      System.out.println(" \n kalkulatorscientific");
+      System.out.println("Faktorial dari 7! adalah" + cs. menghitungFaktorial(7));
+      System.out.println("luas lingkarannya adalah" + cs.luas());
+      System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(12));
+}
+       
    }       
-    }
+    
 
 
 
