@@ -38,6 +38,7 @@ public class main1
        System.out.println("Hasil Pembagian method bagi dengan parameter: "+ hasil8);
        */
        
+       /*
        kalkulatorprogrammer clp = new kalkulatorprogrammer();
        System.out.println(" \n kalkulatorprogrammer");
        System.out.println("Bentuk Biner dari Desimal " + " :"+ Integer.toBinaryString(500));
@@ -49,6 +50,16 @@ public class main1
       System.out.println("Faktorial dari 7! adalah" + cs. menghitungFaktorial(7));
       System.out.println("luas lingkarannya adalah" + cs.luas());
       System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(12));
+      */
+     
+      kalkulatorTrigonometri  cls = new kalkulatorTriRadian();
+      kalkulatorTrigonometri  clv = new kalkulatorTriDegree();
+      System.out.println(" \n CalculatorTrigonometri ");
+      System.out.println("Nilai dari sin 60 adalah"+ Math.sin(60));
+      System.out.println("Nilai dari Cos 45 adalah"+ Math.cos(45));
+      System.out.println("Nilai dari tan 70 adalah"+ Math.tan(70));
+      System.out.println("Nilai dari derajat sudut untuk PI/4 adalah " + Math.toDegrees(Math.PI/4) + " derajat");  
+      System.out.println("Nilai dari sudut radian untuk sudut 180 derajat adalah " + Math.toRadians(180));  
 }
        
    }       
