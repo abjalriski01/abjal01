@@ -51,7 +51,8 @@ public class main1
       System.out.println("luas lingkarannya adalah" + cs.luas());
       System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(12));
       */
-     
+    
+      /*
       kalkulatorTrigonometri  cls = new kalkulatorTriRadian();
       kalkulatorTrigonometri  clv = new kalkulatorTriDegree();
       System.out.println(" \n CalculatorTrigonometri ");
@@ -59,10 +60,49 @@ public class main1
       System.out.println("Nilai dari Cos 45 adalah"+ Math.cos(45));
       System.out.println("Nilai dari tan 70 adalah"+ Math.tan(70));
       System.out.println("Nilai dari derajat sudut untuk PI/4 adalah " + Math.toDegrees(Math.PI/4) + " derajat");  
-      System.out.println("Nilai dari sudut radian untuk sudut 180 derajat adalah " + Math.toRadians(180));  
+      System.out.println("Nilai dari sudut radian untuk sudut 180 derajat adalah " + Math.toRadians(180));
+      */
+       
+       kalkulator kl = new kalkulator();
+      simpanOperasiKalkulator  spr = new SimpanOperasiKeMemoryReverse();
+      
+      
+      kl.setSimpanOperasi(spr);
+      kl.op1 = 1;
+      kl.op2 = 1;
+      System.out.println(kl.jumlah());
+      
+      kl.op1 = 2;
+      kl.op2 = 2;
+      System.out.println(kl.jumlah());
+      
+      kl.op1 = 3;
+      kl.op2 = 3;
+      System.out.println(kl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(kl.bacaOperasi());
+      
+      
+      simpanOperasiKalkulator spf = new SimpanOperasiKeMemoryForwad();
+      kl.setSimpanOperasi(spf);
+      kl.op1 = 1;
+      kl.op2 = 1;
+      System.out.println(kl.jumlah());
+      
+      kl.op1 = 2;
+      kl.op2 = 2;
+      System.out.println(kl.jumlah());
+      
+      kl.op1 = 3;
+      kl.op2 = 3;
+      System.out.println(kl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(kl.bacaOperasi());
+      
+    }
 }
        
-   }       
+          
     
 
 
